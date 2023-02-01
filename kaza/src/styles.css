@@ -1,0 +1,64 @@
+.App {
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+}
+
+.Header {
+  position: absolute;
+  width: 1240px;
+top: 40px;
+height: 68px;
+left:100px
+}
+
+.logo {
+  height: 50px;
+}
+._nav{
+  
+  
+position: absolute;
+width: 309px;
+height: 34px;
+top: 17px;
+left: 931px;
+left: 75.88%;
+right: 8%;
+top: 25%;
+bottom:25%
+}
+
+  ._navlinkAPropos{
+size:24px ;
+  position: absolute;
+  left: 90.55%;
+right: 0;
+top: 25%;
+bottom: 25%;
+line-height:34.22px;
+width: 116px;
+height: 34px;
+left: 1124px;
+font-family:'Monserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 142.6%;
+color: #ff6060;
+display: flex;
+align-items: flex-end;
+text-align: right;
+justify-content: space-between;
+
+}
+
+a{
+text-decoration-line: none;
+
+
+}
