@@ -84,7 +84,7 @@ text-decoration-line: none;
 
 /*home*/
 
-.Backround{
+.Background{
 
 display: grid;
 border-radius:25px;
@@ -98,7 +98,6 @@ background-image: -moz-radial-gradient(#000000);
 
 }
 ._body{display: flex;
-
 width:1240px;
   Height:1095px;
   Top: 171px;  
@@ -111,9 +110,75 @@ margin-top: 50px;
 width:1240px;
 
 }
+.box_section_galerie{
+  display: grid;
+grid-template-rows: 340px 340px;
+grid-template-columns:repeat(3, 340px);
+  Width: 1240px;
+  Height:829px;
+  Top: 437px;
+  Left:100px;
+margin-top: 3rem;
+background-color:aqua;
+gap:2rem;
+
+}
+ul{
+display:grid;
+
+}
+
+
+.galerie_one{
+width:340px;
+height:340px;
+display:grid;
+grid-area:1/1;
+
+}
+.galerie_two{
+width:340px;
+height:340px;
+display:grid;
+grid-area:1/2;
+
+}
+.galerie_three{
+width:340px;
+height:340px;
+display:grid;
+grid-area:1/3;
+
+}
+.galerie_for{
+width:340px;
+height:340px;
+display:grid;
+grid-area:2/1;
+
+}
+.galerie_five{
+width:340px;
+height:340px;
+display:grid;
+grid-area:2/2;
+
+}
+.galerie_six{
+width:340px;
+height:340px;
+display:grid;
+grid-area:2/3;
+
+}
+
+
+
+
+
 
 .box{
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
 display: grid;
 border-radius: 15px;
 Width:1240px;
