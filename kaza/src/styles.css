@@ -1,6 +1,20 @@
-.App {
-  font-family: sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
   width: 100%;
+  height: 100vh;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.App {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .flex {
@@ -9,206 +23,104 @@
 }
 
 .Header {
-display: grid;
-width:1240px;
-  Height:68px;
-
-left: 100px;
-top: 40px;
-
-Height:68px;
-grid-template-columns: 2fr 0.5fr  ;
-grid-template-rows:34px 34px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
 }
 
 .logo {
   height: 3.125rem;
-}
-._nav{
-background-color: aqua;
-display:grid;
-
-
-
-}
-
-  ._navlinkAPropos{
-display: grid;
-grid-area: 1/3;
-font-family:'Monserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-color: #ff6060;
-margin-top: 0.3rem;
-
-
-
-}
-._navlinkAccueil {
- 
-display:flex;
-  font-family: "Montserrat", sans-serif;
-  Font-style: Medium;
-  Font-size: 24px;
   display: flex;
-  align-items: flex-end;
-  text-align: right;
-  text-decoration-line: underline;
-  Width: 136px;
-  Height: 34px;
-  Top:17px;
-  Left:931px;
-
-  
-   color:#FF6060;
-
+}
+._nav {
+  display: flex;
+  justify-content: space-between;
 }
 
-._navlinkAccueil:hover{
-
-  transform: scale(1.5);
-transform:  scaleX(2);
- transform: scaleY(2);
- -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
-
+._navlink {
+  display: flex;
+  font-size: 24px;
+  color: #ff6060;
+  margin-left: 2rem;
+  transition: all 0.3s;
 }
 
-a{
-text-decoration-line: none;
-
-
+._navlink:hover {
+  color: #ff60cc;
+  text-decoration: underline;
 }
 
+a {
+  text-decoration-line: none;
+}
 
 /*home*/
-
-.Background{
-
-display: grid;
-border-radius:25px;
-background-blend-mode: darken;
-Opacity:30%;
-Width:1240px;
-Height:223px;
-Top:171px;;
-color: #000000;
-background-image: -moz-radial-gradient(#000000);
-
-}
-._body{display: flex;
-width:1240px;
-  Height:1095px;
-  Top: 171px;  
-  Left:100px;
-
-}
-section{
-display: grid;
-margin-top: 50px;
-width:1240px;
-
-}
-.box_section_galerie{
+.box_background {
   display: grid;
-grid-template-rows: 340px 340px;
-grid-template-columns:repeat(3, 340px);
-  Width: 1240px;
-  Height:829px;
-  Top: 437px;
-  Left:100px;
-margin-top: 3rem;
-background-color:aqua;
-gap:2rem;
 
-}
-ul{
-display:grid;
-
+  border-radius: 15px;
+  height: 223px;
 }
 
-
-.galerie_one{
-width:340px;
-height:340px;
-display:grid;
-grid-area:1/1;
-
-}
-.galerie_two{
-width:340px;
-height:340px;
-display:grid;
-grid-area:1/2;
-
-}
-.galerie_three{
-width:340px;
-height:340px;
-display:grid;
-grid-area:1/3;
-
-}
-.galerie_for{
-width:340px;
-height:340px;
-display:grid;
-grid-area:2/1;
-
-}
-.galerie_five{
-width:340px;
-height:340px;
-display:grid;
-grid-area:2/2;
-
-}
-.galerie_six{
-width:340px;
-height:340px;
-display:grid;
-grid-area:2/3;
-
+.herobox {
+  background: url("/public/imgs/IMG.png"), #00000055;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 223px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-
-
-
-.box{
-
-display: grid;
-border-radius: 15px;
-Width:1240px;
-Height:223px;
-grid-template-rows: 
-50px ;
-grid-template-columns: 1fr 0.5fr  ;
+.legend {
+  z-index: 2;
+  font-weight: 200;
+  font-size: 48px;
+  color: #ffffff;
 }
-.IMG{
-border-radius: 15px;
-display: grid;
-grid-area: 2/1;
-margin-top: -3.1rem;
-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
+section {
+  margin-top: 50px;
 }
-.legend{
-display: grid;
-  Width:705px;
-Height:68px;
-z-index: 1;
-Font-family:" Montserrat", sans-serif; 
-Font-style: Medium;
-Font-size: 48px;
-Line-height: 68px;
-Line-height: 143%;
-text-align: Left;
-Fill: Solid;
-grid-area: 2/1;
-margin-left: 20rem;
-color: #FFFFFF;
 
+.box_section_galerie {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3rem;
+  background-color: #f2f2f2f2;
+  border-radius: 30px;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.box_card {
+  border-radius: 15px;
+  background-blend-mode: darken;
+  height: 340px;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all, 0.3s;
+}
+
+.box_card:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.box_card_text {
+  z-index: 3;
+}
+
+.box_card_text p {
+  margin: 0;
 }

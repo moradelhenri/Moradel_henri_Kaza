@@ -1,9 +1,7 @@
-import React from 'react'
+import "./style.css";
 
-function Section() {
-  return (
-    <div>section</div>
-  )
+function section() {
+  return <div>section</div>;
 }
 
-export default Section
+export default section;
