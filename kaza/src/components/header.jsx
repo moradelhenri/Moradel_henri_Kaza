@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import Logo from "../assets/imgs/logo.png";
+
 
 export default function Header() {
   return (
@@ -8,14 +10,13 @@ export default function Header() {
       <div>
         <img className="logo" id="logo" src={Logo} alt="" />
       </div>
-
       <div className="_nav">
-        <a href="#" className="_navlink">
+     <Link to="/" className="_navlink">
           Accueil
-        </a>
-        <a href="#" className="_navlink">
+       </Link>
+        <Link to="/about" className="_navlink">
           A propos
-        </a>
+        </Link>
       </div>
     </header>
 
@@ -24,3 +25,5 @@ export default function Header() {
 }
 
 // [logo                                  lien1   lien2]
+
+     
