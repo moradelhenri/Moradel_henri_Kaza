@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.App {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+}
+
+.logo {
+  height: 3.125rem;
+  display: flex;
+}
+._nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+._navlink {
+  display: flex;
+  font-size: 24px;
+  color: #ff6060;
+  margin-left: 2rem;
+  transition: all 0.3s;
+}
+
+._navlink:hover {
+  color: #ff60cc;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+/*home*/
+.box_background {
+  display: grid;
+
+  border-radius: 15px;
+  height: 223px;
+}
+
+.herobox {
+  background: url("/public/imgs/IMG.png"), #00000055;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 223px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.legend {
+  z-index: 2;
+  font-weight: 200;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.box_section_galerie {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3rem;
+  background-color: #f2f2f2f2;
+  border-radius: 30px;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.box_card {
+  border-radius: 15px;
+  background-blend-mode: darken;
+  height: 340px;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all, 0.3s;
+}
+
+.box_card:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.box_card_text {
+  z-index: 3;
+}
+
+.box_card_text p {
+  margin: 0;
+}
+.fiche{
+  Width:1440px;  
+  Height:1024px;
+  Top:951px;
+    Left:-543px;
+
+
+}
+
+.box_picture_galerie{
+
+display: flex;
+Height:1024px;
+
+
+
+
+}
+.picture{
+
+display: flex;
+height: 100%;
+
+}
