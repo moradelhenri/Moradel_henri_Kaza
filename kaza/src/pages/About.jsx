@@ -13,7 +13,9 @@ function About() {
     <Header/> 
         <NavLink/>
    
-
+<ul>
+  <li>bonjour</li>
+</ul>
 
 
     </div>
