@@ -64,7 +64,7 @@ a {
 }
 
 .herobox {
-  background: url("/public/imgs/IMG.png"), #00000055;
+  background: url('/public/imgs/IMG.png'), #00000055;
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,27 +124,6 @@ section {
 .box_card_text p {
   margin: 0;
 }
-.fiche{
-  Width:1440px;  
-  Height:1024px;
-  Top:951px;
-    Left:-543px;
-
-
-}
-
-.box_picture_galerie{
-
-display: flex;
-Height:1024px;
-
-
-
-
-}
-.picture{
-
-display: flex;
-height: 100%;
-
+li {
+  list-style: none;
 }

@@ -1,22 +1,19 @@
-function Cards({ description, picture, id,   }) {
-    return (
-      <div
-        className="box_cards"
+function Cards({ name, description, cover }) {
+  return (
+    <ul>
+      <li
+        className="box_card"
         style={{
-          background: `center /  url(${picture}) linear-gradient(23deg, #00000099 0%, #00000050 12%, rgba(0,241,255,0) 100%)`,
-
+          background: `center / cover url(${cover}), linear-gradient(23deg, #00000099 0%, #00000050 12%, rgba(0,241,255,0) 100%)`
         }}
       >
-
-        <div className="box_cards_text">
-            <p>{id}</p>
-          <p>{description}</p>
-          <p className="picture">{picture}</p>
-          
+        <div className="box_card_text">
+          <h2>{name}</h2>
         </div>
-      </div>
-    );
-  }
-  
-  export default Cards;
-  
+        <h4>{description}</h4>
+      </li>
+    </ul>
+  );
+}
+
+export default Cards;
