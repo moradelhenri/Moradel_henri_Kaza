@@ -127,3 +127,30 @@ section {
 li {
   list-style: none;
 }
+.pictures{
+display: grid;
+width: 800px;
+height: 200px;
+grid-template-columns: repeat(3, 1fr) ;
+grid-template-rows: repeat(3, 1fr) ;
+background-color: #ff60cc;
+}
+
+.slidePics{
+width: 800px;
+height: 500px;
+contain: layout;
+background-color: aqua;
+
+}
+.rightArrowStyles,.leftArrowStyles{
+background-color: yellow;
+
+
+}
+.left{
+background-color: #ff6060;
+
+
+
+}
