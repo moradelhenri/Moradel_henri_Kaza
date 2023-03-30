@@ -1,4 +1,4 @@
-function Cards({ name, description, cover }) {
+function Cards({ name, description, cover, rating }) {
   return (
     <ul>
       <li
@@ -11,6 +11,7 @@ function Cards({ name, description, cover }) {
           <h2>{name}</h2>
         </div>
         <h4>{description}</h4>
+        <h4>{rating}</h4>
       </li>
     </ul>
   );

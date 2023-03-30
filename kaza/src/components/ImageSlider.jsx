@@ -35,10 +35,11 @@ return (
          />
       )}
       {slides.map((slide, index) => (
-         <div
+         <div className="boxSlider"
             key={index} 
          >
-            {index === current && <img src={slide} alt="logement à louer" />}
+            {index === current && <div className="box-imgSlider"> <img className="imgSlider"  src={slide} alt="logement à louer" /> </div>}
+         
             {index === current && (
                <span className="slider__number">
                   {current + 1}/{length}

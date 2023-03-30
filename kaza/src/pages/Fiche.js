@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Cards from "../components/Cards";
+//import Cards from "../components/Cards";
 import axios from "axios";
 import Header from "../components/Header";
 import ImageSlider from "../components/ImageSlider";
+import Tag from "../components/Tag";
 function Fiche() {
   const [data, setData] = useState({});
   const { id } = useParams(); // fiche/id-de-la-fiche
-  const tag = data.tags;
-  console.log(data.tags);
+  const tags = data && data.tags;
+
   const slides = data && data.pictures;
+  const rating = data && data.rating
 
   useEffect(() => {
     axios
@@ -28,26 +30,32 @@ function Fiche() {
       {data.id ? (
         <div className="name">
              <ImageSlider slides={slides} />
-            cover={data.cover}
-            title={data.title}
-            description={data.description}
+             <h1>{data.title}</h1>
+             <h3>{data.location}</h3>
+         <div className="boxTag">
           
-          <p>{data.title}</p>
-          <div>
-            <ul>
-              {data.tags.map((tag) => (
-                <li key={tag}>
-                  <mark>{tag}</mark>
-                </li>
+          
+         {tags.map((tag) => (
+               <Tag key={tag}tag={tag} />
+                 
+               
               ))}
-            </ul>
+          
+          
           </div>
+         
+           
+              <div className="name_host">
+                                    <span className="name__host">{data?.host.name}</span>
+                                    <img className="host_owner_picture" src={data?.host.picture} alt="Propriétaire"/>
+                                </div>
 
           <div>
+          
             <p>{data.id}</p>
             <p>{data.description}</p>
 
-         
+   
 
             <p>{data.rating}</p>
           </div>

@@ -64,7 +64,7 @@ a {
 }
 
 .herobox {
-  background: url('/public/imgs/IMG.png'), #00000055;
+  background: url('/public/imgs/IMG.png'), #57262655;
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,21 +136,142 @@ grid-template-rows: repeat(3, 1fr) ;
 background-color: #ff60cc;
 }
 
-.slidePics{
-width: 800px;
-height: 500px;
-contain: layout;
-background-color: aqua;
+
+
+
+.housing_sheet{
+ 
+  color: #ff6060;
+
+  
 
 }
-.rightArrowStyles,.leftArrowStyles{
-background-color: yellow;
+#carrousel-container{
+
+display: block;
+  position: relative;
+  width: 100%;
+  height: 415px;
+  margin: 2% 0;
+  overflow: hidden;
 
 
 }
-.left{
-background-color: #ff6060;
+
+
+.box-imgSlider{
+
+display: flex;
+  height: 415px;
+  margin: auto auto 30px auto;
+  position: relative;
+  width: 100%;
+
+}
+.imgSlider{
+   border-radius: 15px;
+  height: 415px;
+  object-fit: cover;
+display:flex;
+  width: 100%;
+  mix-blend-mode: normal;
+color:  #140c0c55;
+}
 
 
 
+
+.leftArrowStyles{
+display: flex;
+  position: absolute;
+  top: 47%;
+  left: 2%;
+  width: 60px;
+  height: 60px;
+
+  
+  z-index: 10;
+  cursor: pointer;
+
+
+}
+.rightArrowStyles{
+  display: flex;
+    position: absolute;
+    top: 47%;
+    right: 2%;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    cursor: pointer;
+font-weight: 800px;
+
+}
+
+.name{
+position: relative;
+height: 100%;
+width: 100%;
+}
+.slider__number{
+
+
+    width: 20px;
+line-height: 142%;
+    left: 48%;
+    top: 86%;
+    font-weight: 800;
+  display: block;
+            position: absolute;
+      color: #ffffff; 
+    font-size: 18px;
+            margin-right: 25px;
+            right: 0;
+           
+    transform: translateY(-50%)
+
+
+}
+.boxTag{
+display: flex;
+
+}
+.tag{
+  background-color: #FF6060;
+  border-radius: 10px;
+  color: #ffffff;
+display: flex;
+  font-size: 20px;
+  margin: auto 10px;
+
+  padding: 5px 15px;   
+  text-align: center; 
+  justify-content: center;
+
+}
+/* owner photo , nom */
+.name_host{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.host_owner_picture{
+
+  display: flex;
+	margin-left: 10px;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: #c4c4c4;
+
+}
+.name__host{
+  width: 63px;
+	height: 66px;
+	text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
