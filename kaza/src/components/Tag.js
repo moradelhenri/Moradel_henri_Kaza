@@ -2,7 +2,7 @@ import React from 'react'
 
 function Tag({tag}) {
   return (
-    <div className='tag'>{tag}</div>
+    <div className='tag tags'>{tag}</div>
   )
 }
 
