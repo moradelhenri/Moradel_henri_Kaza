@@ -6,13 +6,16 @@ import Header from "../components/Header";
 import ImageSlider from "../components/ImageSlider";
 import Tag from "../components/Tag";
 import Stars from "../components/Stars";
+import Accordion from "../components/Accordion";
 function Fiche() {
   const [data, setData] = useState({});
   const { id } = useParams(); // fiche/id-de-la-fiche
   const tags = data && data.tags;
-
   const slides = data && data.pictures;
+  const Equipments = data && data.equipments;
+  const Description = data && data.description;
 
+ 
   useEffect(() => {
     axios
       .get("../data/data.json")
@@ -56,17 +59,46 @@ function Fiche() {
          
 
          
-          
+ <div className="wapper_accordion">         
+<div className=" accordion">
 
+
+<div className="box-description">
+
+
+<Accordion Title="Description"
+
+Text={Description}
+/> </div>
+<div>
+<Accordion Title="Equipements"
+
+Text={Equipments}
+/>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+ 
+</div>
         
-          {/* </div> */}
-
-          {/* <div> */}
-            {/* <p>{data.description}</p> */}
-         
-        {/* </div> */}
-        </div>
-        </div>
+   </div>      
+           
+       
+    
+        
       ) : null}
       ;
     </div>
