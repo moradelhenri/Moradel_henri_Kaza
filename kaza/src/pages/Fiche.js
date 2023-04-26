@@ -12,9 +12,10 @@ function Fiche() {
   const { id } = useParams(); // fiche/id-de-la-fiche
   const tags = data && data.tags;
   const slides = data && data.pictures;
-  const Equipments = data && data.equipments;
-  const Description = data && data.description;
-
+ 
+  const Description = data.description 
+  const Equipments = data && data.equipments
+  
  
   useEffect(() => {
     axios
@@ -59,26 +60,29 @@ function Fiche() {
          
 
          
- <div className="wapper_accordion">         
+  <div className="wapper_accordion">   
+
 <div className=" accordion">
 
+ <div className="box-equipement">
+<Accordion Title="Equipements" 
 
-<div className="box-description">
+Text={Equipments}
+ /> </div>
 
 
-<Accordion Title="Description"
+
+
+ <div className="box-description "> 
+
+
+<Accordion Title="Description" 
 
 Text={Description}
 /> </div>
-<div>
-<Accordion Title="Equipements"
 
-Text={Equipments}
-/>
 
-</div>
-
-</div>
+ </div> 
 
 
 </div>
@@ -94,14 +98,14 @@ Text={Equipments}
  
 </div>
         
-   </div>      
+        
            
-       
+       </div> 
     
         
       ) : null}
       ;
-    </div>
+    </div> 
   );
 }
 

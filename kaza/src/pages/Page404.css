@@ -1,0 +1,37 @@
+.page404 {
+    text-align: center
+  }
+.title-404{
+    color: #ff6060;
+     font-size: 150px; 
+    margin: auto;
+   
+  }
+  
+  .description {
+    color: #ff6060;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .lien-home {
+    display: block;
+   margin-top: 10rem;
+    color: #ff6060;
+    font-size: 14px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+line-height: 142.6%;
+  }
+  .lien-home:hover,
+:focus {
+      text-decoration-line: underline;
+  }
+  
+  
+    
+    .description {
+      font-size: 18px;
+    }

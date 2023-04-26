@@ -31,14 +31,16 @@ function Home() {
       <div className="herobox">
         <h1 className="legend">Chez vous, partout et ailleurs</h1>
       </div>
-
+   <div className="box_section_galerie">
       {data.map((data, id) => (
         <li key={data.id} onClick={() => handleCardClick(data.id)}>
           <Card cover={data.cover} title={data.title} />
         </li>
       ))}
 
-      <div></div>
+   
+
+      </div>
     </section>
   );
 }

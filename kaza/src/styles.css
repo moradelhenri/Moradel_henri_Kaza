@@ -14,7 +14,8 @@ body {
 .App {
   padding: 4rem;
   display: flex;
-  flex-direction: column;
+   flex-direction: column; 
+
 }
 
 .flex {
@@ -87,15 +88,15 @@ section {
   margin-top: 50px;
 }
 
-/* .box_section_galerie { */
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* padding: 3rem; */
-  /* background-color: #f2f2f2f2; */
-  /* border-radius: 30px; */
-  /* margin-top: 2rem; */
-  /* gap: 2rem; */
-/* } */
+ .box_section_galerie { 
+   display: grid; 
+   grid-template-columns: repeat(3, 1fr); 
+  padding: 3rem; 
+   background-color: #f2f2f2f2; 
+   border-radius: 30px; 
+   margin-top: 2rem; 
+   gap: 2rem; 
+ } 
 
 .box_card {
   border-radius: 15px;
@@ -211,7 +212,7 @@ font-weight: 800px;
 }
 
 .name{
-  display: grid;
+  display: grid; 
 position: relative;
 height: 100%;
 width: 100%;
@@ -241,13 +242,14 @@ line-height: 142%;
 
    }
  .name-container-fill{
-display: grid;
+display:inline-grid;
   grid-template-columns:repeat( 2  1fr);
   grid-template-rows: 51px 26px 20px 25px 52px;  
 
-
+justify-content: space-between;
 }
 .name-container-title{
+  white-space: nowrap;
 display: grid;
 grid-area: 1/1;
 }
@@ -310,7 +312,7 @@ justify-content: end;
 }
 /* stars style */
 .starBox{
-  display:grid;
+display: inline-grid; 
   width: 195px;
 height: 36px;
 grid-area: 4/4;
@@ -319,8 +321,8 @@ justify-self: flex-end;
 
 .iconStyle{
 grid-area: 4/4;
-  display:grid;   
-  grid-auto-flow: column; 
+  display: inline-grid;   
+   grid-auto-flow: column;  
 margin-top: -1.4em;
 
 

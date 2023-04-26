@@ -6,7 +6,7 @@ export default function Accordion(props) {
 
   const [toggle, setToggle] = useState(false)
   const [heightEl, setHeightEl] = useState();
-
+// use ref pour selectionner la hauteut d'un élement
   const refHeight = useRef()
 
   useEffect(() => {
@@ -20,22 +20,35 @@ export default function Accordion(props) {
 
 
   return (
-      <div className="accordion">
+      // <div className="accordion">
+//  partie visible 
+// bouton  sur laquelle nous allons cliquer pour developper l'accordeon 
+<div className="accordion">
 
-          <button 
-          onClick={toggleState}
-          className="accordion-visible">
-            <h2>{props.Title}</h2>  
+<button 
+onClick={toggleState}
+className="accordion-visible">
+  <h2>{props.Title}</h2> 
+	
+	  
+        
+          {/* <div  */}
+          {/* onClick={toggleState} */}
+          {/* className="accordion-visible "> */}
+         
               <img 
-              className={toggle  ?  "active": "icon"}
-              src={icon} />
+              className={toggle  ?  "active"  :"icon"}
+              src={icon} alt=" chevron" />
           </button>
-          
+
+          {/* partie bascule */}
           <div 
           className={toggle ? "accordion-toggle animated" : "accordion-toggle" }
+        //   hauteur de defilement  des points actuelle
           style={{height: toggle ? `${heightEl}` : "0px"}}
           ref={refHeight}
           >
+            {/* a des fins d"accessibilité pour caché ou rendre visible pour les lecteurs d'ecran */}
               <p aria-hidden = {toggle ? true : false}>
            {props.Text}
               </p>
