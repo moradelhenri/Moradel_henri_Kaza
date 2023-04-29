@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
  import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 function About() {
 
@@ -16,7 +17,7 @@ function About() {
 <ul>
   <li>bonjour</li>
 </ul>
-
+<Footer/>
 
     </div>
   )

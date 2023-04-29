@@ -7,6 +7,8 @@ import ImageSlider from "../components/ImageSlider";
 import Tag from "../components/Tag";
 import Stars from "../components/Stars";
 import Accordion from "../components/Accordion";
+import Footer from "../components/Footer";
+
 function Fiche() {
   const [data, setData] = useState({});
   const { id } = useParams(); // fiche/id-de-la-fiche
@@ -105,7 +107,9 @@ Text={Description}
         
       ) : null}
       ;
+      <Footer/>
     </div> 
+    
   );
 }
 
