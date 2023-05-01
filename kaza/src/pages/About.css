@@ -1,0 +1,55 @@
+.apropos-picture
+{
+    background: url('/public/imgs/aPropos.png'), #57262655;
+     background-blend-mode: darken; 
+     background-repeat: no-repeat; 
+     background-size: cover; 
+    height: 223px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px; 
+ 
+    /* filter: brightness(60%); */
+    
+
+}
+.container-about-accordion{
+justify-content: space-between;
+
+padding:5rem;
+
+
+
+
+margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    height: 723px;
+
+}
+
+
+
+
+.box-service{
+display: flex;
+
+
+
+
+}
+
+.box-respect {
+    display: flex;
+
+
+
+}
+.oui{
+background-color: blue;
+
+display: flex;
+}

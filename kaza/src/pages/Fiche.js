@@ -15,7 +15,7 @@ function Fiche() {
   const tags = data && data.tags;
   const slides = data && data.pictures;
  
-  const Description = data.description 
+  const Description = data && data.description 
   const Equipments = data && data.equipments
   
  
@@ -65,24 +65,20 @@ function Fiche() {
   <div className="wapper_accordion">   
 
 <div className=" accordion">
-
- <div className="box-equipement">
+<div className="box-equipement">
+  
 <Accordion Title="Equipements" 
 
-Text={Equipments}
- /> </div>
+Text= { Equipments }
+   /> 
+  </div>
 
-
-
-
- <div className="box-description "> 
-
-
+<div className="box-description">
 <Accordion Title="Description" 
 
-Text={Description}
-/> </div>
-
+Text= { Description }
+/> 
+</div>
 
  </div> 
 

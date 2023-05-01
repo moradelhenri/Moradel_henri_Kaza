@@ -23,7 +23,7 @@ export default function Accordion(props) {
       // <div className="accordion">
 //  partie visible 
 // bouton  sur laquelle nous allons cliquer pour developper l'accordeon 
-<div className="accordion">
+<ul className="accordion">
 
 <button 
 onClick={toggleState}
@@ -32,12 +32,9 @@ className="accordion-visible">
 	
 	  
         
-          {/* <div  */}
-          {/* onClick={toggleState} */}
-          {/* className="accordion-visible "> */}
          
               <img 
-              className={toggle  ?  "active"  :"icon"}
+              className={toggle  ?  "active" :"icon"}
               src={icon} alt=" chevron" />
           </button>
 
@@ -54,6 +51,6 @@ className="accordion-visible">
               </p>
           </div>
           
-      </div>
+      </ul>
   )
 }
