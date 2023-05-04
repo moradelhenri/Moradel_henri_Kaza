@@ -76,7 +76,7 @@ padding: auto;
 .accordion-toggle p {
 margin-right: 3rem;
 margin-left: 2rem;
- /* text-size-adjust:content;   */
+  text-size-adjust:content;   
     pointer-events: none;
     line-height: 1.3;
 
@@ -100,8 +100,8 @@ display:grid;
 
 
 .box-equipement{
-
-display:grid;
+margin-bottom: 4rem;
+display:inline-grid;
 background-color: blue;
 grid-area: 5/1;
  width: max(47vw, 200px); 
@@ -111,7 +111,7 @@ grid-area: 5/1;
 
 }
 .wapper_accordion {
-display: flex ;
+display: grid ;
 margin-right: -12rem;
 margin-left: -3rem;
 height: 52px;
