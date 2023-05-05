@@ -102,7 +102,7 @@ display:grid;
 .box-equipement{
 margin-bottom: 4rem;
 display:inline-grid;
-background-color: blue;
+
 grid-area: 5/1;
  width: max(47vw, 200px); 
 
