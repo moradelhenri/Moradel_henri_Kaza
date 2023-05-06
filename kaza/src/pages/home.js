@@ -16,7 +16,7 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get("data/apart.json")
+      .get("data/data.json")
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);

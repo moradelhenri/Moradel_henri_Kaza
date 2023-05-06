@@ -1,4 +1,4 @@
-function Cards({ name, description, cover, rating }) {
+/*/ function Cards({ name, description, cover, rating }) {
   return (
     <ul>
       <li
@@ -17,4 +17,4 @@ function Cards({ name, description, cover, rating }) {
   );
 }
 
-export default Cards;
+export default Cards;*/

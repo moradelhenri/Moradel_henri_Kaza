@@ -21,7 +21,7 @@ function Fiche() {
  
   useEffect(() => {
     axios
-      .get("/data/apart.json")
+      .get("/data/data.json")
       .then((res) => {
         const ficheData = res.data.find((x) => x.id === id);
         console.log(ficheData);
