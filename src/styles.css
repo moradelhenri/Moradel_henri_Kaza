@@ -14,7 +14,8 @@ body {
 .App {
   padding: 4rem;
   display: flex;
-  flex-direction: column;
+   flex-direction: column; 
+
 }
 
 .flex {
@@ -64,7 +65,7 @@ a {
 }
 
 .herobox {
-  background: url("/public/imgs/IMG.png"), #00000055;
+  background: url('/public/imgs/IMG.png'), #57262655;
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,6 +74,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 15px;
 }
 
 .legend {
@@ -86,15 +88,15 @@ section {
   margin-top: 50px;
 }
 
-.box_section_galerie {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 3rem;
-  background-color: #f2f2f2f2;
-  border-radius: 30px;
-  margin-top: 2rem;
-  gap: 2rem;
-}
+ .box_section_galerie { 
+   display: grid; 
+   grid-template-columns: repeat(3, 1fr); 
+  padding: 3rem; 
+   background-color: #f2f2f2f2; 
+   border-radius: 30px; 
+   margin-top: 2rem; 
+   gap: 2rem; 
+ } 
 
 .box_card {
   border-radius: 15px;
@@ -109,6 +111,7 @@ section {
   cursor: pointer;
   transform: scale(1);
   transition: all, 0.3s;
+  margin-right:2em;
 }
 
 .box_card:hover {
@@ -124,27 +127,215 @@ section {
 .box_card_text p {
   margin: 0;
 }
-.fiche{
-  Width:1440px;  
-  Height:1024px;
-  Top:951px;
-    Left:-543px;
+li {
+  list-style: none;
+}
+/* .pictures{ */
+/* display: grid; */
+/* width: 800px; */
+/* height: 200px; */
+/* grid-template-columns: repeat(3, 1fr) ; */
+/* grid-template-rows: repeat(3, 1fr) ; */
+/* background-color: #ff60cc; */
+/* } */
+
+
+
+
+.housing_sheet{
+ 
+  color: #ff6060;
+
+  
+
+}
+#carrousel-container{
+width: min-content;
+display: grid;
+  position: relative;
+  width: 100%;
+  height: 415px;
+  /* margin: 2% 0; */
+  overflow: hidden;
 
 
 }
 
-.box_picture_galerie{
+
+.box-imgSlider{
 
 display: flex;
-Height:1024px;
+  height: 415px;
+  /* margin: auto auto 30px auto; */
+  position: relative;
+  width: 100%;
+
+}
+.imgSlider{
+   border-radius: 15px;
+  height: 415px;
+  object-fit: cover;
+display:flex;
+  width: 100%; 
+  mix-blend-mode: normal;
+color:  #140c0c55;
+}
 
 
+
+
+.leftArrowStyles{
+display: flex;
+  position: absolute;
+  top: 47%;
+  left: 2%;
+  width: 60px;
+  height: 60px;
+
+  
+  z-index: 10;
+  cursor: pointer;
 
 
 }
-.picture{
+.rightArrowStyles{
+  display: flex;
+    position: absolute;
+    top: 47%;
+    right: 2%;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    cursor: pointer;
+font-weight: 800px;
 
-display: flex;
+}
+
+.name{
+  display: grid; 
+position: relative;
 height: 100%;
+width: 100%;
+}
+.slider__number{
+
+
+    width: 20px;
+line-height: 142%;
+    left: 48%;
+    top: 86%;
+    font-weight: 800;
+  display: block;
+            position: absolute;
+      color: #ffffff; 
+    font-size: 18px;
+            margin-right: 25px;
+            right: 0;
+           
+    transform: translateY(-50%)
+
+
+
+  
+
+
+
+   }
+ .name-container-fill{
+display:inline-grid;
+  grid-template-columns:repeat( 2  1fr);
+  grid-template-rows: 51px 26px 20px 25px 52px;  
+
+/* justify-content: space-between; */
+}
+.name-container-title{
+  white-space: nowrap;
+display: grid;
+grid-area: 1/1;
+}
+.name-container-location{
+display: grid;
+grid-area: 2/1;
+
+}
+.boxTag{
+
+grid-area: 4/1;
+display: flex;
+}
+.tag{
+
+padding:  0 10px 10px;
+
+  background-color: #FF6060;
+  border-radius: 10px;
+  color: #ffffff;
+display: flex;
+  font-size: 20px; 
+  text-align: center; 
+  justify-content: center;
+margin-right: 8px;
+
+    
+}
+
+/* owner photo , nom */
+/* box photo */
+.name_host{
+  display: grid;
+  grid-area: 1/4;
+justify-content: end;
+  justify-content: flex-end;
+  width: 100%;
+
+}
+
+.host_owner_picture{
+  display: grid;
+  grid-area: 1/4;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: #c4c4c4;
+
+}
+.name__host{
+  width: 63px;
+	height: 66px;
+	 text-align: right;
+
+  display: flex;
+   align-items: center; 
+   justify-content: flex-end;
+  font-size: 18px;
+   font-weight: 500; 
+}
+/* stars style */
+.starBox{
+display: inline-grid; 
+  width: 195px;
+height: 36px;
+grid-area: 4/4;
+justify-self: flex-end;
+}
+
+.iconStyle{
+grid-area: 4/4;
+  display: inline-grid;   
+   grid-auto-flow: column;  
+margin-top: -1.4em;
+
+
+}
+.icon-style{
+
+  width: 24,75px;
+  height: 24px;
+
+}
+.ok{
+
+width: 10rem;
+height: 10rem;
 
 }
