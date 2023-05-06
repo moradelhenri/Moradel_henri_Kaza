@@ -12,7 +12,7 @@ return (
     <div className='iconStyle'>
 {ratingStart.map(( index) => 
 
-elem >= index ? (<img key={index} className='icon-style' src ={starActive} />  ) :  ( < img key={index} className='icon-style' src= {starInactive}  />
+elem >= index ? (<img key={index} className='icon-style' src ={starActive} alt='icon etoile'/>  ) :  ( < img key={index} className='icon-style' src= {starInactive}  alt='etoile vide' />
 )  
 )
   
