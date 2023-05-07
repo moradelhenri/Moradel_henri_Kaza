@@ -11,12 +11,16 @@ import "../styles.css";
 import Footer from "../components/Footer";
 
 function Home() {
+  
   const [data, setData] = useState([]);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    axios
-      .get("data.json")
+  useEffect(() => 
+  {
+    
+   axios
+   
+      .get("data.json") 
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
