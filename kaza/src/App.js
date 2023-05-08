@@ -1,9 +1,10 @@
 import "./styles.css";
+
 import {
   createBrowserRouter,
   Route,
   createRoutesFromElements,
-  RouterProvider,
+  RouterProvider, 
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Fiche from "./pages/Fiche";
