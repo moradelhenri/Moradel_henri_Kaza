@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, } from "react-router-dom";
 import Logo from "../assets/imgs/logo.png";
 
 
 export default function Header() {
   return (
-    //<div className=" d_home">
+ 
 
     <header id="header" className="flex Header">
       <div>
-        <img className="logo" id="logo" src={Logo} alt="" />
+        <img className="logo" id="logo" src={Logo} alt=" logo principal kaza" />
       </div>
       <div className="_nav">
      <Link to="/" className="_navlink">

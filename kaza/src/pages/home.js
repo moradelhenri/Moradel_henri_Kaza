@@ -1,4 +1,3 @@
-
 import Card from "../components/card";
 import Header from "../components/Header";
 
@@ -11,14 +10,12 @@ import "../styles.css";
 import Footer from "../components/Footer";
 
 function Home() {
-  
   const [data, setData] = useState([]);
   const navigate = useNavigate();
 
-  useEffect(() => 
-  {
-    
-   axios.get("http://localhost:3000/data.json") 
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/data.json")
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -29,22 +26,18 @@ function Home() {
 
   return (
     <section>
-      <Header />
-
+      <Header/>
       <div className="herobox">
         <h1 className="legend">Chez vous, partout et ailleurs</h1>
       </div>
-   <div className="box_section_galerie">
-      {data.map((data, id) => (
-        <li key={data.id} onClick={() => handleCardClick(data.id)}>
-          <Card cover={data.cover} title={data.title} />
-        </li>
-      ))}
-
-   
-
+      <div className="box_section_galerie">
+        {data.map((data, id) => (
+          <li key={data.id} onClick={() => handleCardClick(data.id)}>
+            <Card cover={data.cover} title={data.title} />
+          </li>
+        ))}
       </div>
-       <Footer/> 
+      <Footer />
     </section>
   );
 }

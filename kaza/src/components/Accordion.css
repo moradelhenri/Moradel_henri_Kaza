@@ -87,7 +87,7 @@ grid-area: 5/2;
 margin-right: -2rem;
 
 display:grid;
- width: max(47vw, 200px);
+ width: max(47vw, 200px); 
 
 
 
