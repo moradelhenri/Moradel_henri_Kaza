@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Moradel_henri_Kaza/static/css/main.1bfe57aa.css",
-    "main.js": "/Moradel_henri_Kaza/static/js/main.a0dc00f5.js",
+    "main.css": "/Moradel_henri_Kaza/static/css/main.8bea15bd.css",
+    "main.js": "/Moradel_henri_Kaza/static/js/main.62edfd08.js",
     "static/media/aPropos.png": "/Moradel_henri_Kaza/static/media/aPropos.a01235c7cac4702f5edd.png",
     "static/media/IMG.png": "/Moradel_henri_Kaza/static/media/IMG.efc1935eb81fc5e585f9.png",
     "index.html": "/Moradel_henri_Kaza/index.html",
     "static/media/vector-right.svg": "/Moradel_henri_Kaza/static/media/vector-right.88153a5d119c2744ffe34dca1ef843df.svg",
     "static/media/vector-left.svg": "/Moradel_henri_Kaza/static/media/vector-left.19918a1634b1441a25ae0b50e6b1f85b.svg",
-    "main.1bfe57aa.css.map": "/Moradel_henri_Kaza/static/css/main.1bfe57aa.css.map",
-    "main.a0dc00f5.js.map": "/Moradel_henri_Kaza/static/js/main.a0dc00f5.js.map"
+    "main.8bea15bd.css.map": "/Moradel_henri_Kaza/static/css/main.8bea15bd.css.map",
+    "main.62edfd08.js.map": "/Moradel_henri_Kaza/static/js/main.62edfd08.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bfe57aa.css",
-    "static/js/main.a0dc00f5.js"
+    "static/css/main.8bea15bd.css",
+    "static/js/main.62edfd08.js"
   ]
 }
