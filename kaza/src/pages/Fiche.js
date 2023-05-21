@@ -20,7 +20,8 @@ function Fiche() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/data.json")
+      .get("http://localhost:3000/data.json?")
+  
       .then((res) => {
         const ficheData = res.data.find((x) => x.id === id);
         console.log(ficheData);
@@ -29,7 +30,7 @@ function Fiche() {
       .catch((err) => console.log(err));
   }, [id]);
 
-  return (
+  return ( "http://localhost:3000",
     <div className="housing_sheet">
        <Header /> 
       {data.id ? (
@@ -65,16 +66,20 @@ function Fiche() {
 
                 <div className="box-description">
                   <Accordion Title="Description" Text={Description} />
-                </div>
+                
               </div>
             </div>
+            
+            </div>
           </div>
+          <div className="box_fiche_footer"> <Footer/></div>
         </div>
-      ) : null} 
+      ) : null}  
      
        
-      ;<div className="ok"></div>
-       <Footer/> 
+      ;
+      {/* <div className="ok"></div> */}
+      
     </div>
   );
 }

@@ -8,28 +8,28 @@ import Accordion from "../components/Accordion";
 
 function About() {
   return (
-    <div>
+    <div className="oui">
        <Header/>  
       <NavLink />
       <div className="apropos-picture"></div>
       <div className="container-about-accordion">
         <div>
-          {" "}
+         
           <Accordion
             Title="Fiabilité"
             Text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
           />
         </div>
         <div className="box-respect">
-          {" "}
+       
           <Accordion
-            style={{ textAlign: "left" }}
+          
             Title="Respect"
             Text="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
           />
         </div>
         <div className="box-service">
-          {" "}
+
           <Accordion
             Title="Service"
             Text=" Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
@@ -41,8 +41,9 @@ function About() {
              En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
         />
       </div>
-
-       <Footer/> 
+        <div className="box_about_footer">
+       <Footer/>
+        </div>
            </div>
   );
 }

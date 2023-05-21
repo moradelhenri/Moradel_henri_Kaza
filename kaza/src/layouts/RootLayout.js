@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Outlet, NavLink } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet,  } from "react-router-dom";
 
 import Fiche from "../pages/Fiche";
 

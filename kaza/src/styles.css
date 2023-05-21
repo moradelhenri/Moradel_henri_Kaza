@@ -97,6 +97,17 @@ section {
    margin-top: 2rem; 
    gap: 2rem; 
  } 
+ @media (max-width: 1150px) { 
+ .box_section_galerie{
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+
+ }
+
+}
+
+
+
 
 .box_card {
   border-radius: 15px;

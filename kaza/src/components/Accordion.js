@@ -46,9 +46,9 @@ className="accordion-visible">
           ref={refHeight}
           >
             {/* a des fins d"accessibilité pour caché ou rendre visible pour les lecteurs d'ecran */}
-              <p aria-hidden = {toggle ? true : false}>
+            <div className="box-p_text">  <p aria-hidden = {toggle ? true : false}>
            {props.Text}
-              </p>
+              </p></div>
           </div>
           
       </ul>

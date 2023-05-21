@@ -10,20 +10,22 @@
     justify-content: center;
     align-items: center;
     padding-right: 15px; 
- 
+ max-width: 1600px;
     /* filter: brightness(60%); */
-    
+
 
 }
 .container-about-accordion{
 justify-content: space-between;
-
-padding:5rem;
-
-
-
-
-margin-top: 2rem;
+justify-content: space-around;
+ min-width: 100px;
+ max-width: 1600px;
+justify-items: center;
+align-items: center;
+margin-left: 5rem;
+margin-right: 5rem;
+justify-content: center;
+margin-top: 12rem;
     display: flex;
     flex-direction: column;
 
@@ -34,22 +36,3 @@ margin-top: 2rem;
 
 
 
-.box-service{
-display: flex;
-
-
-
-
-}
-
-.box-respect {
-    display: flex;
-
-
-
-}
-.oui{
-background-color: blue;
-
-display: flex;
-}
