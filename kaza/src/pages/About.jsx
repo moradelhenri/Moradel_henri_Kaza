@@ -13,11 +13,11 @@ function About() {
       <NavLink />
       <div className="apropos-picture"></div>
       <div className="container-about-accordion">
-        <div>
+        <div className="box-fiabilite">
          
           <Accordion
             Title="Fiabilité"
-            Text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
+          Text = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
           />
         </div>
         <div className="box-respect">
@@ -35,11 +35,12 @@ function About() {
             Text=" Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
           />
         </div>
+        <div className="box-securite ">
         <Accordion
           Title="Sécurité"
           Text="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services.
              En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
-        />
+        /></div>
       </div>
         <div className="box_about_footer">
        <Footer/>
