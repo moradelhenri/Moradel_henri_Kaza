@@ -32,8 +32,8 @@ function RootLayout() {
           <Route path="/" element={<Layout />}>
           
           <Route index element={<Home />} /> 
-             {/* <Route path="/" element={<Home />} />  */}
-            <Route path="fiche/:id" element={<Fiche />} />
+             <Route path="Moradel_henri_kaza?/" element={<Home />} />            
+            <Route path="/fiche/:id" element={<Fiche />} />
             <Route path="about" element={<About />} />
             <Route path="*" element={<Page404 />} />
           </Route>

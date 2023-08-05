@@ -99,8 +99,36 @@ section {
  } 
  @media (max-width: 1150px) { 
  .box_section_galerie{
-  display: grid; 
-  grid-template-columns: repeat(2, 1fr);
+ 
+   grid-template-columns: repeat(2, 1fr); 
+
+ }
+
+}
+ @media (max-width: 870px) { 
+ .box_section_galerie{
+ display: flex;
+flex-direction: column;
+
+ }
+
+}
+ @media (max-width: 627px) { 
+ .box_section_galerie{
+ 
+
+  
+
+padding: 0px;
+
+ }
+
+}
+ @media (max-width: 627px) { 
+ .box_card{
+
+margin-left: -2.5rem;
+width: 100%;
 
  }
 
