@@ -28,7 +28,7 @@ function Home() {
     <section>
       <Header/>
       <div className="herobox">
-        <h1 className="legend">Chez vous, partout et ailleurs</h1>
+        <h1 className="legend"><span className="chez">Chez vous, partout et ailleurs</span></h1>
       </div>
       <div className="box_section_galerie">
         {data.map((data, id) => (
