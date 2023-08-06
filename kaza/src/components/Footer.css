@@ -7,7 +7,7 @@
 
 
 }
-@media (max-width: 1150px) { 
+/*@media (max-width: 1150px) { 
 .box_about_footer{
 
 margin-top: 10%;
@@ -24,20 +24,18 @@ margin-top: 20%;
 
 
   }
-
+*/
 
   #container-footer {
-    display: flex;
-  
+  display: grid;
+  justify-content: space-between;
     height: 209px;
 ;
-
-justify-content: space-between;
 align-items: center;
-justify-content: center;
-
-    background-color: #000000;
+justify-content: space-around;
 justify-items: center;
+    background-color: #000000;
+
     margin-top: 9%;
 
 
@@ -52,10 +50,16 @@ display: flex;
     margin: 4% 0 3% 0;
     width: 100%;
   }
+  .box-img-footer{
+  display: grid;
+	
+
+  }
   .img-footer{
-display: flex;
-align-self: center;
-margin-top: 4rem;
+
+
+
+
  
 		height: 40px;
 
