@@ -112,12 +112,13 @@ pointer-events: none;
 
     grid-area: 5/1;
   
-    margin-left: -1rem;
+    margin-left: -1rem; 
     display:grid;
-     width: max(47vw, 200px);
+      width: max(47vw, 200px); 
    
-    
-    
+ 
+  
+   
     }
    
     
@@ -126,13 +127,13 @@ pointer-events: none;
     
     
     
-    .box-equipement{
+     .box-equipement{ 
     margin-bottom: 4rem;
     display:grid;
-    margin-right: -4rem;
+      margin-right: -4rem;  
     grid-area: 5/2;
-     width: max(47vw, 200px); 
-    
+      width: max(47vw, 200px); 
+ 
         
     }
     @media (max-width: 1350px) {  
@@ -140,9 +141,12 @@ pointer-events: none;
 margin-right: -2rem;
     }
 }
+@media (min-width:1692px){
+.box-equipement{
 
-
-
+ margin-right: 0.05rem;
+}
+}
     .wapper_accordion {
     display: grid ;
     margin-right: -12rem;
@@ -158,3 +162,27 @@ margin-right: -2rem;
     display:grid;
     
     }
+    @media (max-width:1186px) {
+      .box-equipement,.box-description{
+
+
+        margin-top: 3rem;
+      }
+      
+    }
+    @media (max-width:809px) {
+
+      .box-equipement{
+
+
+     padding-left: 3rem;
+      }
+
+
+
+
+    }
+
+
+
+

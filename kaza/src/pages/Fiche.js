@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../styles.css";
 import { useParams   } from "react-router-dom";
 //import Cards from "../components/Cards";
 import axios from "axios";

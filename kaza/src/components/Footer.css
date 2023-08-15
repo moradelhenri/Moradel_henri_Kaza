@@ -2,7 +2,7 @@
  text-align:justify; padding:0px;
   display:grid;
   padding-top: 5%;
-  max-width: 1600px;
+
 
 
 
@@ -67,4 +67,35 @@ display: flex;
 
 
   }
-  
+  @media (max-width:1188px) {
+    .box_fiche_footer{
+
+margin-top: 3rem;
+
+    }
+    
+  }
+  @media (max-width:1160px) {
+    .box_fiche_footer{
+
+margin-top: 6rem;
+
+    }
+    
+  }
+  @media (max-width:974px) {
+    .box_fiche_footer{
+
+margin-top: 9rem;
+
+    }
+    
+  }
+  @media (max-width:865px) {
+    .box_fiche_footer{
+
+margin-top: 13rem;
+
+    }
+    
+  }
