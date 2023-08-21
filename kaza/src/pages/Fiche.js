@@ -41,33 +41,37 @@ function Fiche() {
             <h1 className="name-container-title">{data.title}</h1>
             <h3 className="name-container-location">{data.location}</h3>
             <div className="boxTag">
-              {tags.map((tag) => (
-                <Tag key={tag} tag={tag} />
+              {tags.map((tag) => (<span className="font_box-tag">
+                <Tag key={tag} tag={tag} /></span>
               ))}
             </div>
-            <div className="name_host">
-              <img
-                className="host_owner_picture"
+            <div className="name_host"> 
+           
+              <img  className="host_owner_picture"
                 src={data?.host.picture}
-                alt="Propriétaire"
-              />
+                
+                alt="Propriétaire"/>
+              
 
-              <span className="name__host">{data?.host.name}</span>
+              <div className="name__host"><span className="name__host_name">{data?.host.name}</span></div>
             </div>
 
             <div className="starBox">
               <Stars elem={data.rating} />
+              
             </div>
 
             <div className="wapper_accordion">
               <div className=" accordion">
-                <div className="box-equipement">
+                
+                 <div className="box-description">
+                  <Accordion Title="Description" Text={Description} />
+                
+                                <div className="box-equipement">
                   <Accordion Title="Equipements" Text={Equipments} />
                 </div>
 
-                <div className="box-description">
-                  <Accordion Title="Description" Text={Description} />
-                
+               
               </div>
             </div>
             
@@ -79,7 +83,7 @@ function Fiche() {
      
        
       ;
-      {/* <div className="ok"></div> */}
+   
       
     </div>
   );
